@@ -2,8 +2,8 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-6">
-      <div className="w-full max-w-sm bg-white shadow-md rounded-xl min-h-[90vh] overflow-hidden flex flex-col justify-between">
+    <div className="min-h-screen bg-gray-100 sm:flex sm:items-center sm:justify-center sm:px-4 sm:py-6">
+      <div className="w-full sm:max-w-sm bg-white shadow-none sm:shadow-md rounded-none sm:rounded-xl min-h-screen sm:min-h-[90vh] overflow-hidden flex flex-col justify-between">
         <div>
           <div className="border-b border-gray-200 px-6 py-4">
             <h2 className="text-lg font-semibold text-gray-800">

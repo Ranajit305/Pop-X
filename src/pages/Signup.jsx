@@ -9,8 +9,8 @@ const Signup = () => {
   const [isAgency, setIsAgency] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-6">
-      <div className="w-full max-w-sm border border-gray-300 rounded-xl p-6 bg-white shadow-md flex flex-col justify-between min-h-[90vh]">
+    <div className="min-h-screen bg-gray-100 sm:flex sm:items-center sm:justify-center sm:px-4 sm:py-6">
+      <div className="w-full sm:max-w-sm border-0 sm:border border-gray-300 rounded-none sm:rounded-xl p-6 bg-white shadow-none sm:shadow-md flex flex-col justify-between min-h-screen sm:min-h-[90vh]">
         <div>
           <h1 className="text-2xl font-bold text-gray-900 mb-1">Create your</h1>
           <h1 className="text-2xl font-bold text-gray-900 mb-4">
@@ -115,11 +115,14 @@ const Signup = () => {
 
         <button
           className={`mt-4 w-full text-white font-semibold py-3 rounded-lg transition 
-        ${ name && number && email && password && company && isAgency
-            ? "bg-[#6C25FF] hover:bg-[#5a1fe6] cursor-pointer"
-            : "bg-gray-300 cursor-not-allowed"
-        }`}
-          disabled={ !name || !number || !email || !password || !company || !isAgency }
+      ${
+        name && number && email && password && company && isAgency
+          ? "bg-[#6C25FF] hover:bg-[#5a1fe6] cursor-pointer"
+          : "bg-gray-300 cursor-not-allowed"
+      }`}
+          disabled={
+            !name || !number || !email || !password || !company || !isAgency
+          }
         >
           Create Account
         </button>

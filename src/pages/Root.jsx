@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Root = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-6">
-      <div className="w-full max-w-sm flex flex-col justify-end border border-gray-300 rounded-xl p-6 bg-white shadow-md min-h-[90vh] relative">
+    <div className="min-h-screen bg-gray-100 sm:flex sm:items-center sm:justify-center sm:px-4 sm:py-6">
+      <div className="w-full sm:max-w-sm flex flex-col justify-end border-0 sm:border border-gray-300 rounded-none sm:rounded-xl p-6 bg-white shadow-none sm:shadow-md min-h-screen sm:min-h-[90vh] relative">
         <Link to="/profile">
           <svg
             xmlns="http://www.w3.org/2000/svg"

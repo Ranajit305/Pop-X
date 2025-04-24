@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
 const Login = () => {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-6">
-      <div className="w-full max-w-sm border border-gray-300 rounded-xl p-6 bg-white shadow-md min-h-[90vh]">
+    <div className="min-h-screen bg-gray-100 sm:flex sm:items-center sm:justify-center sm:px-4 sm:py-6">
+      <div className="w-full sm:max-w-sm border-0 sm:border border-gray-300 rounded-none sm:rounded-xl p-6 bg-white shadow-none sm:shadow-md min-h-screen sm:min-h-[90vh]">
         <h1 className="text-2xl font-bold text-gray-900 mb-1">
           Signin to your
         </h1>
@@ -44,7 +43,11 @@ const Login = () => {
         </div>
 
         <button
-          className={`w-full text-white font-semibold py-3 rounded-lg transition ${email && password? "bg-[#6C25FF] hover:bg-[#5a1fe6] cursor-pointer": "bg-gray-300 cursor-not-allowed"}`}
+          className={`w-full text-white font-semibold py-3 rounded-lg transition ${
+            email && password
+              ? "bg-[#6C25FF] hover:bg-[#5a1fe6] cursor-pointer"
+              : "bg-gray-300 cursor-not-allowed"
+          }`}
           disabled={!email || !password}
         >
           Login
